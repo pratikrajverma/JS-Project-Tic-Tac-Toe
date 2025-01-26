@@ -39,7 +39,7 @@ function initGame(){
                 }else{
                     currentPlayer = 'X'
                 }
-                // console.log(gameInfo)
+                console.log(gameInfo)
     
         
             })
@@ -54,7 +54,6 @@ function initGame(){
  function winCheck(index){
     
     winPosition.forEach((position,index)=>{
-        console.log(position)
         if((gameInfo[position[0]]!='' || gameInfo[position[1]]!='' || gameInfo[position[2]]!='')
         && (gameInfo[position[0]] === gameInfo[position[1]] && gameInfo[position[1]] === gameInfo[position[2]])
         ){
